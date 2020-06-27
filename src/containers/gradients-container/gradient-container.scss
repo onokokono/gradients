@@ -1,0 +1,13 @@
+@import "../../sass//responsive.scss";
+
+.container {
+    display: flex;
+    flex-flow: row;
+    margin: 10px 1% 50px 1%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @include responsive(big-desktop) {
+        margin: 1% 8% 1% 8%;
+    }
+}

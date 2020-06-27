@@ -1,0 +1,55 @@
+@import '../../sass//global.scss';
+@import '../../sass//responsive.scss';
+
+.box{
+    background-color: $whiteBackground;
+    box-sizing: border-box;
+    width: 31%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    font-family: PopLight;
+    font-size: 13px;
+    margin-top: 20px;
+
+    .top, .bottom {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .top{
+        align-items: flex-end;
+    }
+    .bottom{
+        align-items: flex-start;
+    }
+
+    .gradientDisplay{
+        border-radius: 50%;
+        background-color: lightcoral;
+        width: 80%;
+        padding-top: 80%;
+        justify-self: center;
+        align-self: center;
+    }
+    @include responsive(tab-land){
+        height: 400px;
+    }
+
+    @include responsive(tab-port){
+        width: 45%;
+    }
+
+    @include responsive(phone){
+        width: 90%;
+        height: 600px;
+    }
+
+    @include responsive(big-desktop){
+        height: 50vh;
+    }
+}

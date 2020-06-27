@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import configureGradientStore from './hooks/gradients-store';
+
+configureGradientStore();
 
 ReactDOM.render(
   <React.StrictMode>
