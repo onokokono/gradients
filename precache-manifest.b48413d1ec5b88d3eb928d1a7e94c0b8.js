@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d7bef67b0b496e7f70a12e1b32ca5a5",
+    "revision": "6d362ec213de4f56be0f7ee0d9bbc210",
     "url": "/gradients/index.html"
   },
   {
-    "revision": "a34469102d4823a70c23",
-    "url": "/gradients/static/css/main.5356f69c.chunk.css"
+    "revision": "95c0fabef48c50099da1",
+    "url": "/gradients/static/css/main.5135bd8b.chunk.css"
   },
   {
-    "revision": "2613c05d28527c200192",
-    "url": "/gradients/static/js/2.85f812ff.chunk.js"
+    "revision": "06e31042c8593a8736b9",
+    "url": "/gradients/static/js/2.07dd39a0.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/gradients/static/js/2.85f812ff.chunk.js.LICENSE.txt"
+    "url": "/gradients/static/js/2.07dd39a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a34469102d4823a70c23",
-    "url": "/gradients/static/js/main.9d16abda.chunk.js"
+    "revision": "95c0fabef48c50099da1",
+    "url": "/gradients/static/js/main.4917c687.chunk.js"
   },
   {
     "revision": "c2e6e4a275e38fb0ab28",
