@@ -1,7 +1,17 @@
 import React from 'react';
+import TextButton from '../../UI/textButton/textButton';
+import { copy_to_clipboard } from '../../utilities/utilities';
 import './gradient-box.scss';
 
 const gradient_box = (props) => {
+    let inlineStyle;
+
+    if (props.colors)
+        inlineStyle = `linear-gradient(45deg, #${props.colors[0]} 0%, #fad0c4 99%, #${props.colors[1]} 100%)`;
+
+    const copyStyle = () => {
+        copy_to_clipboard(inlineStyle);
+    }
 
     return (
         <div className='box'>
@@ -12,12 +22,13 @@ const gradient_box = (props) => {
 
             <img
                 alt=''
-                style={{ backgroundImage: `linear-gradient(45deg, #${props.colors[0]} 0%, #fad0c4 99%, #${props.colors[1]} 100%)` }}
+                src={null}
+                style={{ backgroundImage: inlineStyle }}
                 className='gradientDisplay' />
 
             <div className='bottom' >
                 <p> {`#${props.colors[0]} --> #${props.colors[1]}`} </p>
-                <p> Copy CSS </p>
+                <TextButton onClick={copyStyle} > Copy CSS </TextButton>
             </div>
         </div>
     );

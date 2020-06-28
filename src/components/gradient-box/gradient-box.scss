@@ -14,6 +14,12 @@
     font-family: PopLight;
     font-size: 13px;
     margin-top: 20px;
+    transition: all;
+    animation: boxFadeIn 1s ease-in;
+
+    p{
+        margin: 0;
+    }
 
     .top, .bottom {
         display: flex;
@@ -22,15 +28,14 @@
     }
 
     .top{
-        align-items: flex-end;
+        align-items: flex-start;
     }
     .bottom{
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .gradientDisplay{
         border-radius: 50%;
-        background-color: lightcoral;
         width: 80%;
         padding-top: 80%;
         justify-self: center;
@@ -46,10 +51,19 @@
 
     @include responsive(phone){
         width: 90%;
-        height: 600px;
+        height: 450px;
     }
 
     @include responsive(big-desktop){
         height: 50vh;
+    }
+}
+
+@keyframes boxFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
